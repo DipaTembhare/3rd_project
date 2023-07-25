@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://imgs.search.brave.com/_a9JlbDb3FFZMEjMb-5vHZjPMBhs8InQDVopu7J7R2c/rs:fit:1200:675:1/g:ce/aHR0cHM6Ly9jb3do/aWRlb3V0bGV0LmNv/bS9tZWRpYS93eXNp/d3lnL21vZGVybi1v/ZmZpY2UtaW50ZXJp/b3ItZGVzaWduLmpw/Zw);
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    width: 100%;
+   
+    margin: auto;
+    
+    padding: 15px 30px;
+    font-family: gilroy;
+    font-size: 20px;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+   
+}
+.navbar .left{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    height: 100%;
+    padding: 35px 40px;
+
+    
+}
+.navbar .left a{
+    position: relative;
+   text-decoration: none;
+     color: white;
+    
+    
+}
+.navbar .left a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar .left a:hover::after{
+    width: 100%;
+}
+
+.navbar .right h2{
+    padding: 30px 100px;
+    color: white;
+    font-family: ogg;
+    font-size: 40px;
+    font-weight: 300;
+}
+.contain{
+    
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+.contain h1{
+    font-size: 70px;
+    margin-top: 10px;
+
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+border: none;
+}
+/*.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+}
+
